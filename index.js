@@ -1,26 +1,35 @@
 const attendee = {
-  attendeeId : "T001",
-  name : "Alice Smith",
-  event : "JavaScript Conference",
-  ticketType : "VIP",
+  attendeeId : 'T001',
+  name : 'Alice Smith',
+  event : 'JavaScript Conference',
+  ticketType : 'VIP',
   ticketPrice : 150.00
 }
 function logAttendeeName(attendee){
-  return console.log(name)
+  console.log(attendee.name);
 }
 function logTicketPrice(attendee){
-  return console.log(ticketPrice)
+  console.log(attendee.ticketPrice);
 }
-function updateTicketType(attendee) {
-  return attendee.ticketType = ""
+function updateTicketType(attendee,newTicketType) {
+  attendee.ticketType = newTicketType;
   
 }
-function updateTicketPrice(attendee){
-  return attendee.ticketPrice = ""
+function updateTicketPrice(attendee,newTicketPrice){
+  attendee.ticketPrice = newTicketPrice;
 }
 function removeEventProperty(attendee){
-  return delete attendee.event
+  delete attendee.event;
 }
-function addCheckInProp(attendee){
-  return attendee.checkedIn = "True"
+function addCheckedInProperty(attendee){
+  attendee.checkedIn = true;
 }
+module.exports = {
+  attendee,
+  logAttendeeName,
+  logTicketPrice,
+  updateTicketType,
+  updateTicketPrice,
+  removeEventProperty,
+  addCheckedInProperty
+};
