@@ -6,21 +6,21 @@ const attendee = {
   ticketPrice : 150.00
 }
 function logAttendeeName(attendee){
-  console.log(name)
+  return console.log(name)
 }
 function logTicketPrice(attendee){
-  console.log(ticketPrice)
+  return console.log(ticketPrice)
 }
 function updateTicketType(attendee) {
-  attendee.ticketType = ""
+  return attendee.ticketType = ""
   
 }
 function updateTicketPrice(attendee){
-  attendee.ticketPrice = ""
+  return attendee.ticketPrice = ""
 }
 function removeEventProperty(attendee){
-  delete attendee.event
+  return delete attendee.event
 }
 function addCheckInProp(attendee){
-  attendee.checkedIn = "True"
+  return attendee.checkedIn = "True"
 }
